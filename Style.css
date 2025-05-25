@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size:62.5% ;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+#toggler{
+    display: none;
+}
+.n{
+    font-size: 3rem;
+    color: #333;
+    border-radius: 5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0 ,.3);
+    display: none;
+
+}
+.header{
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, .1);
+
+
+}
+.logo img{
+    width: 50px;
+    cursor: pointer;
+    /* margin: 7px 0; */
+
+}
+.header .navBar a{ 
+    padding: 0 1.5rem;
+    font-size: 2rem;
+    color: #666;
+
+}
+.header  .navBar a:hover{
+    color:#fac031;
+  
+}
+.header .icons a{
+    color: #333;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .icons a:hover{
+    color: #fac031;
+}
+/* .about{
+    top: 30px;
+} */
+.row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0 ;
+
+}
+.image{
+    flex: 1 1 30rem;
+    width: 50%;
+    /* position: relative; */
+}
+.imgs img{
+    width: 100%;
+    height: 100%;
+    
+   
+}
+.about .content{
+    flex: 1 1 30rem;
+}
+.about .content h1{
+    font-size: 60px;
+    position: relative;
+    left: 20px;
+}
+.about .content span{
+    margin-left: 15px;
+    font-family :serif;
+    color: #fac031;
+    line-height: 22px;
+    font-size: 70px;
+}
+.content p{
+    font-size: 2.5rem;
+    color: #333;
+    padding: 2rem 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    /* padding: 9rem 3.5rem; */
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    background: #fac031;
+    color: #333;
+}
+
+/* SectionAbout */
+.About{
+    width: 100%;
+    height: 100vh;
+    pad: 70px 0;
+}
+.about_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+.about_menu .image {
+    flex: 1 1 40%;
+    
+}
+.image img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+}
+.text{
+    flex: 1 1 40%;
+
+}
+.text span{
+    
+    font-family :serif;
+    color: #fac031;
+    font-size: 50px;
+}
+.text h1{
+    bottom: 50px;
+    font-size: 50px;
+}
+.text h3{
+     font-size: 30px;
+    margin: 0 0 50px 0;
+
+}
+.text p{
+    font-size: 2.5rem;
+    color: #333;
+    padding: 2rem 0;
+}
+
+.About .About_btn{
+    left: 55%;
+    background-color: #fac031;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-size: 30px;
+    bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width :991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding:2rem ;
+    }
+    section{
+        padding:2rem ;
+    }
+    .about{
+        background-position: left;
+    }
+}
+
+
+@media (max-width :768px){
+    .n{
+        display: block;
+    }
+    .header .navBar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: 1rem solid rgba(0, 0, 0, .1); 
+        clip-path: polygon(0 0 ,100% 0 , 0 0);
+        
+    }
+    .header #toggler:checked ~ .navBar{
+        clip-path: polygon(0 0 ,100% 0 ,100% 100%, 0 100%);
+
+    }
+    .header .navBar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #eee;
+        border: 1rem solid rgba(0, 0, 0, .1);
+        display: block;
+
+
+
+    }
+    .about .content h3{
+        font-size: 3rem;
+    }
+    .about .content span{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width :450px){
+    html{
+        font-size: 50%;
+    }
+   
+}
