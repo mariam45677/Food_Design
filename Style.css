@@ -184,6 +184,129 @@ html{
 }
 
 
+/* menu */
+.menu{
+    width: 100%;
+    padding: 70px 0;
+}
+.menu h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 55px;
+}
+.menu h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.menu h1 span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: relative;
+    bottom: 10px;
+    background-color: #fac031;
+}
+.menu_Box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.menu_Box .menu_Card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
+
+}
+.menu_Box .menu_Card .menu_image {
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu_Box .menu_Card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.menu_Box .menu_Card .menu_image:hover img{
+    transform: scale(1.1)
+
+}
+.small_card{
+    width: 50px;
+    height: 40px;
+    float: right;
+    position: relative;
+    top: -240px;
+   opacity: 0;
+   transition: 0.3S;
+   right: -8px;
+   
+}
+.menu_Box .menu_Card:hover .small_card{
+    position: relative;
+    top: -240px;
+    opacity: 1;
+    right: 10px;
+
+}
+.small_card i{
+     color: #fac031;
+     font-size: 25px;
+}
+.small_card i:hover{
+     color: #333;
+     font-size: 25px;
+}
+
+.menu_info h2{
+    text-align: center;
+    font-size: 30px;
+    color: #fac031;
+    margin: 10px auto 10px auto;
+}
+.menu_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 20px;
+}
+.menu_info h3{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.menu_info .menu_icon{
+    color: #fac031;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+.menu_info .menuBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #eee;
+    background-color: #333;
+    padding: 8px 9px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+.menu_info .menuBtn:hover{
+    color: #333;
+    background-color: #fac031;
+}
+
 
 
 
