@@ -215,7 +215,7 @@ html{
     width: 95%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
     grid-gap: 15px;
 }
 .menu_Box .menu_Card{
@@ -306,6 +306,100 @@ html{
     color: #333;
     background-color: #fac031;
 }
+/* endsectionMenu */
+
+.Gallery{
+    width: 100%;
+    padding: 70px 0;
+}
+.Gallery h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+}
+.Gallery h1 span {
+    margin-left: 15px;
+    color: #fac031;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Gallery h1 span::after{
+      content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: relative;
+    bottom: 10px;
+    background-color: #fac031;
+
+}
+.Gallery_Box{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 15px;
+}
+.Gallery_Box .galery_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+.Gallery_Box .galery_image img{
+    width: 100%;
+     height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .3s;
+}
+.Gallery_Box .galery_image:hover img{
+    opacity: 0.4;
+}
+.Gallery_Box .galery_image h3{
+    position: absolute;
+    font-size: 24px;
+    margin-bottom: 130px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fac031;
+    /* z-index: 5; */
+    opacity: 0;
+    transition: 0.3s;
+
+}
+.Gallery_Box .galery_image:hover h3{
+    opacity: 1;
+}
+.Gallery_Box .galery_image p{
+    position: absolute;
+    width: 400px;
+    opacity: 0;
+    margin-top: 30px;
+    text-align: center;
+    color: aliceblue;
+    line-height: 22px;
+    transition: 0.3s;
+}
+.Gallery_Box .galery_image:hover p{
+    opacity: 1;
+}
+.Galery_Btn{
+    position: absolute;
+    margin-top: 130px;
+    opacity: 0;
+    background-color: #fac031;
+    color: #333;
+    padding: 7px 25px;
+    text-align: center;
+    transform: translateY(45px);
+    transition: 0.3s;
+}
+.Gallery_Box .galery_image:hover .Galery_Btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
 
